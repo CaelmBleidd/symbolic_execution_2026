@@ -1,11 +1,15 @@
 GO ?= go
 
+CORE_PACKAGES := ./internal/... ./pkg/...
+ENTRY_PACKAGES := ./examples ./homework1 ./homework2 ./homework3 ./homework4 ./homework5 ./homework6
+
 .PHONY: all build test examples deps lint fmt coverage clean help
 
 all: build test ## Сборка и тесты
 
-build: ## Сборка всех пакетов
-	$(GO) build ./...
+build: ## Сборка каркаса и программ запуска
+	$(GO) build $(CORE_PACKAGES) ./final_tests/...
+	$(GO) build $(ENTRY_PACKAGES)
 
 test: ## Запуск тестов
 	$(GO) test -v ./...
@@ -16,8 +20,8 @@ examples: ## Запуск примера работы с Z3
 deps: ## Загрузка зависимостей Go
 	$(GO) mod download
 
-lint: ## Проверка go vet без изменения файлов
-	$(GO) vet ./...
+lint: ## Проверка каркаса и программ запуска через go vet
+	$(GO) vet $(CORE_PACKAGES) $(ENTRY_PACKAGES)
 
 fmt: ## Форматирование Go-кода
 	$(GO) fmt ./...
