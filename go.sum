@@ -1,5 +1,5 @@
-github.com/ebukreev/go-z3 v0.0.0-20250821144348-dfd1fde1462b h1:4MLrvHOoMZz8YTsrZGgqdFzCsNM3qnN3IUhF12jkxbc=
-github.com/ebukreev/go-z3 v0.0.0-20250821144348-dfd1fde1462b/go.mod h1:OkwGpPy9ZSY98wyfthByCVKLYPNCUTW3UmqOmkJ3koE=
+github.com/ebukreev/go-z3 v0.0.0-20260926131321-1bf599c42924 h1:/W3WGD1GVAVYa5u5VHFKtG2ywjZfrh2EQQhkrysMnVg=
+github.com/ebukreev/go-z3 v0.0.0-20260926131321-1bf599c42924/go.mod h1:OkwGpPy9ZSY98wyfthByCVKLYPNCUTW3UmqOmkJ3koE=
 golang.org/x/mod v0.12.0 h1:rmsUpXtvNzj340zd98LZ4KntptpfRHwpFOHG188oHXc=
 golang.org/x/mod v0.12.0/go.mod h1:iBbtSCu2XBx23ZKBPSOrRkjjQPZFPuis4dIYUhu/chs=
 golang.org/x/sys v0.12.0 h1:CM0HF96J0hcLAwsHPJZjfdNzs0gftsLfgKt57wWHJ0o=
